@@ -9,11 +9,10 @@
 
     <title>Introdução ao HTML</title>
 
-    <link rel="shortcut icon" href="./novo-design-de-icone-x-do-logotipo-do-twitter-em-2023_1017-45418.avif"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="../Arquivos/novo-design-de-icone-x-do-logotipo-do-twitter-em-2023_1017-45418.avif">
 
-    <!--Atributo ref= Relação e herf a referencia-->
-    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="../estilizações/style.css">
     <!---linka o css com o html de forma externa -->
 
 
@@ -23,56 +22,92 @@
 <body>
     <!--Linkando Inlane ou direto na tage-->
     <h1 style="">Tela principal Sobre o twiter</h1><!--H1 e o Titulo principal(noemalmente chamamos 1 vez)-->
-    <header id="cabecalho" >
-        <img id="logo"src="./novo-design-de-icone-x-do-logotipo-do-twitter-em-2023_1017-45418.avif" alt="X"> 
+    <header id="cabecalho">
+        <img src="../Arquivos/novo-design-de-icone-x-do-logotipo-do-twitter-em-2023_1017-45418.avif" alt="X">
 
-         <nav>
+        <nav>
             <a href="http://youtu.be/-cHSj-VCXAU">Twiter</a>
             <a href="index.html">Inicial</a>
-            <a href="BRIEFING.pdf" download>Saiba mais</a>
+            <a href="../Arquivos/BRIEFING.pdf" download>Saiba mais</a>
         </nav>
 
     </header>
-    <!--Seção do x-->>
+    <!--Seção do x-->
 
     <main>
-        <section >
+        <section>
             <h2>Modelos do twiter</h2>
-            <div id="dve">
-                <img src="Logo_of_Twitter.svg.png" alt="Logo Azul do twiter">
-                <h3>twiter</h3>
-                <span>Rede social</span>
+            <!----------------------->
+
+            <div id="container-flex-Produto">
+
+                <!--Card-Produto-->
+                <article class="card-Produto">
+                    <!----------------------->
+                    <img src="../Arquivos/Logo_of_Twitter.svg.png" alt="Logo Azul do twiter">
+                    <!----------------------->
+                    <h3>twiter</h3>
+                    <span>Gratis</span>
+
+                </article>
+
+
+                <!--Card-Produto-->
+                <article class="card-Produto">
+                    <!----------------------->
+                    <img src="../Arquivos/Logo_of_Twitter.svg.png" alt="Logo Azul do twiter">
+                    <!----------------------->
+                    <h3>twiter</h3>
+                    <span>Gratis</span>
+
+                </article>
+
+
+                <!--Card-Produto-->
+                <article class="card-Produto">
+                    <!----------------------->
+                    <img src="../Arquivos/Logo_of_Twitter.svg.png" alt="Logo Azul do twiter">
+                    <!----------------------->
+                    <h3>twiter</h3>
+                    <span>Gratis</span>
+
+                </article>
+
+
+
             </div>
+
 
         </section>
 
 
-        <section >
+        <section id="Conteiner-flex-suporte">
 
             <h2>Suporte Ao cliente</h2>
-            <form>
+            <form id="Formulario">
 
                 <label for="campo-nomecompleto">Nome completo</label>
-                <input type="text" placeholder="Digite seu nome completo" id="campo-nomecompleto">
+                <input class="Caixa-de-Texto" type="text" placeholder="Digite seu nome completo"
+                    id="campo-nomecompleto">
 
-                <br /><!--Qubra a linha-->
+                <!--Qubra a linha-->
 
                 <label for="Campo-email">E-mail</E-mail></label>
-                <input type="email" name="" placeholder="E-mail" id="Campo-email">
+                <input class="Caixa-de-Texto" type="email" name="" placeholder="E-mail" id="Campo-email">
 
-                <br>
+
 
                 <label for="campo-Senha">Shenha</label>
-                <input type="password" name="" placeholder="Digete a Senha" id="campo-Senha">
+                <input class="Caixa-de-Texto" type="password" name="" placeholder="Digete a Senha" id="campo-Senha">
 
-                <br>
+
 
                 <label for="campo-upload">upload</label>
-                <input type="file" name="" id="campo-upload">
+                <input class="Caixa-de-Texto" type="file" name="" id="campo-upload">
 
                 <br>
                 <label for="">Estado</label>
-                <select name="" id="">
+                <select class="Caixa-de-Texto" name="" id="">
                     <option value="" selected disabled>Selecione uma opção</option>
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
@@ -104,31 +139,31 @@
 
                 </select>
 
-                <br>
+
 
                 <input type="checkbox" name="" id="">
                 <label for="">li e concordo com os termos</label>
 
-                <br>
+
 
 
                 <label for="">Sexo</label>
-                <br>
+
                 <label for="">feminino</label>
                 <input type="radio" name="opcao-genero" id="" value="feminino">
 
                 <label for="">Masculino</label>
                 <input type="radio" name="opcao-genero" id="" value="Masculino">
 
-                <br>
+
 
                 <label for="">Descrição</label>
                 <textarea name="" id="" required></textarea>
 
-                <br>
 
-                <button type="submit">Enviar</button>
-                <button type="reset">limpar</button>
+
+                <button class="botao" type="submit">Enviar</button>
+                <button class="botao" type="reset">limpar</button>
 
 
             </form>
